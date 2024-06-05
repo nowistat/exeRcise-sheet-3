@@ -117,6 +117,14 @@ The year 2022 had a bigger baby-boom.
 
 d)  Add a new column `year` to both datasets which holds the correct
     year for each.
+    
+```{r Aufgabe3d}
+names2022 <- names2022 %>%
+  mutate(year = 2022)
+
+names2023 <- names2023 %>%
+  mutate(year = 2023)
+```    
 
 e)  Combine both datasets into one using `bind_rows()`.
 
