@@ -128,6 +128,10 @@ names2023 <- names2023 %>%
 
 e)  Combine both datasets into one using `bind_rows()`.
 
+```{r Aufgabe3e}
+names_combined <- bind_rows(names2022, names2023)
+```    
+
 f)  Combine the counts for same names to determine the most popular
     names across both years. Print out the top 10 names in a nicely
     formatted table for both years. Include a table caption.
