@@ -94,10 +94,20 @@ b)  Load the data for both years into R. Check the type of the count
     some of the counts are inaccurate because of this. Explain your
     solution and the repercussions.
     
+It´s not numeric, because if the amount of names is 4 or less it is listed as "4 oder weniger" which is not numeric.
+
+```{r Aufgabe3b}
+library(tidyverse)
+names2022 <- names2022[names2022$Anzahl != "4 oder weniger", ] 
+names2023 <- names2023[names2023$Anzahl != "4 oder weniger", ]
+
+names2022$Anzahl <- as.numeric(names2022$Anzahl)
+names2023$Anzahl <- as.numeric(names2023$Anzahl)
+```
 
 c)  Calculate the total number of babies born in Munich in 2022
     and 2023. Which year had the bigger baby-boom?
-
+    
 d)  Add a new column `year` to both datasets which holds the correct
     year for each.
 
