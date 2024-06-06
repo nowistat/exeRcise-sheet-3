@@ -166,8 +166,8 @@ depressed_data <- read.csv("Depression prevalence by education - OECD.csv")
 
 c)  Put the name / title of the dataset and a link to it below.
 
--   Dataset Name: ...
--   Link: <https://github.com/owid/owid-datasets/>...
+-   Dataset Name: Depression prevalence by education
+-   Link: <https://github.com/owid/owid-datasets/tree/master/datasets/Depression%20prevalence%20by%20education%20-%20OECD>
 
 d)  Come up with a (research) question you want to answer with the data
     and briefly explain why you believe this is an interesting question
