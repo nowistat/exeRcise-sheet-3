@@ -197,6 +197,17 @@ f)  Create a meaningful plot / figure with the dataset. Make sure to
     provide a figure caption (via the chunk options / Rmarkdown) and
     correctly label the figure.
 
+```{r Aufgabe4f}
+ggplot(depressed_sum) +
+  aes(
+    x = `Degree of Education`,
+    weight = `Depression prevalence`
+  ) +
+  geom_bar(fill = "#FF8C00") +
+  labs(x = "Degree of education", y = "Depression prevalence") +
+  theme_gray()
+``` 
+
 ## Final Note
 
 Make sure to push all your commits and changes to GitHub before
