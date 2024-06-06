@@ -147,7 +147,6 @@ Top10 <- names_combined %>%
 
 library(knitr)
 kable(Top10, caption = "Munichs Top 10 Baby Names between 2022 and 2023")
-
 ```    
 
 ## Exercise 4: Open Analysis (4 points)
@@ -160,6 +159,11 @@ a)  Go to <https://github.com/owid/owid-datasets/tree/master/datasets>
     and choose a dataset that interests you. You can have a look at
     <https://ourworldindata.org/> to gather some inspiration.
 b)  Download the dataset and track it in git.
+
+```{r Aufgabe4b}
+depressed_data <- read.csv("Depression prevalence by education - OECD.csv")
+```  
+
 c)  Put the name / title of the dataset and a link to it below.
 
 -   Dataset Name: ...
