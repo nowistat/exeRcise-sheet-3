@@ -174,12 +174,13 @@ d)  Come up with a (research) question you want to answer with the data
     within one sentence. It should be a question that can be answered
     with the dataset and using R.
     
-Is there a connection between the prevalance of depression and different levels of education during and after the education process?
+Is there a connection between the prevalance of depression and different levels of education after the education process?
     
 e)  Use R to answer your chosen question.
 
 ```{r Aufgabe4e}
-
+depressed_sum <- depressed_data %>%
+  mutate(sum_lowsec, )
 ``` 
 
 f)  Create a meaningful plot / figure with the dataset. Make sure to
